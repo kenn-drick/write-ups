@@ -119,12 +119,11 @@ Table: Users
 | admin      | $2y$10$t5z8uIT.n9uCdHCNidcLf.39T1Ui9nrlCkdXrzJMnJgkTiAvRUM6m |
 +------------+--------------------------------------------------------------+
 ```
-Upon researching, I recognize that the format `$2y$10$...` is **bcrypt**:
+Upon researching, I learn that the format `$2y$10$...` is **bcrypt**:
 
 - $2y$ – indicates bcrypt with the original crypt_blowfish format
 - 10$ – cost factor (2^10 rounds)
-
-The remaining 53 characters are the salt (22 chars) + hash (31 chars)
+- The remaining 53 characters are the salt (22 chars) + hash (31 chars)
 
 `Bcrypt` is a slow hashing algorithm, designed to resist brute‑force attacks. However, weak passwords can still be cracked with a good wordlist. I saved the hash for the mark user into a file called mark.hash and used John the Ripper with the bcrypt format and the rockyou.txt word list:
 

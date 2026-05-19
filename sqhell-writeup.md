@@ -3,6 +3,7 @@
 # SQHell - TryHackMe Writeup
 
 ![sqhell](./images/sqhell.webp)
+
 **Platform:** TryHackMe  
 **Room:** [SQHell](https://tryhackme.com/room/sqhell)  
 **Difficulty:** Medium  
